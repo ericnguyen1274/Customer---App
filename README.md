@@ -1,50 +1,58 @@
-# Welcome to your Expo app 👋
+# 🧘🏽‍♂️ Yoga Customer App 🧘🏽‍♂️
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A gangsta-styled yoga customer app built with React Native and Expo.
 
-## Get started
+## Features
 
-1. Install dependencies
+- **Authentication Flow**: Simple login/signup with hardcoded credentials
+- **Yoga Courses**: Browse and join yoga courses
+- **Profile Management**: View user profile and stats
+- **Gangsta Styling**: Dark theme with purple accents
 
+## Login Credentials
+
+- **Email**: nguyen@khung.com
+- **Password**: 123
+
+## Getting Started
+
+1. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
-
+2. Start the development server:
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+3. Run on your device:
+   - Scan the QR code with Expo Go app
+   - Or press 'i' for iOS simulator
+   - Or press 'a' for Android emulator
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## App Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+├── App.tsx                    # Main app component
+├── screens/
+│   ├── LoginScreen.tsx        # Login screen
+│   ├── SignupScreen.tsx       # Signup screen
+│   ├── HomeScreen.tsx         # Yoga courses list
+│   └── ProfileScreen.tsx      # User profile
+└── navigation/
+    ├── AuthStack.tsx          # Authentication navigation
+    └── MainTabNavigator.tsx   # Main app navigation
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Tech Stack
 
-## Learn more
+- React Native
+- Expo
+- TypeScript
+- React Navigation
+- React Native Safe Area Context
 
-To learn more about developing your project with Expo, look at the following resources:
+## Gangsta Flow, Zen Soul 🧘🏽‍♂️
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Built by Nguyễn Xuân Nguyên - Rapper turned coder
